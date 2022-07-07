@@ -62,7 +62,7 @@ $ docker ps
 CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                    NAMES
 c2c703b66b19        nginx-flask-mysql_proxy     "nginx -g 'daemon of…"   39 seconds ago      Up 38 seconds       0.0.0.0:80->80/tcp     nginx-flask-mysql_proxy_1
 2b8a21508c3c        nginx-flask-mysql_backend   "/bin/sh -c 'flask r…"   9 minutes ago       Up 38 seconds       0.0.0.0:5000->5000/tcp   nginx-flask-mysql_backend_1
-0e6a96ea2028        mysql:8.0.19                "docker-entrypoint.s…"   9 minutes ago       Up 38 seconds       3306/tcp, 33060/tcp      nginx-flask-mysql_db_1
+0e6a96ea2028        mysql:8.0.19                "docker-entrypoint.s…"   9 minutes ago       Up 38 seconds       33060/tcp, 0.0.0.0:33061->3306/tcp      nginx-flask-mysql_db_1
 
 
 ```
@@ -70,7 +70,7 @@ c2c703b66b19        nginx-flask-mysql_proxy     "nginx -g 'daemon of…"   39 se
 After the application starts, navigate to `http://localhost:80` in your web browser or run:
 ```
 $ curl localhost:80
-<div>Blog post #1</div><div>Blog post #2</div><div>Blog post #3</div><div>Blog post #4</div>
+<div>   Hiiii this is an TSoM  Blog post #1</div><div>   Hiiii this is an TSoM  Blog post #2</div><div>   Hiiii this is an TSoM  Blog post #3</div><div>   Hiiii this is an TSoM  Blog post #4</div><div>   Hiiii this is an TSoM  Blog post #5</div><div>   Hiiii this is an TSoM  Blog post #6</div><div>   Hiiii this is an TSoM  Blog post #7</div><div>   Hiiii this is an TSoM  Blog post #8</div><div>   Hiiii this is an TSoM  Blog post #9</div>
 ```
 
 Stop and remove the containers
